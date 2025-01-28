@@ -1,0 +1,136 @@
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-image:url('uploads/r.jpg');
+    display: flex;
+    background-size:100%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Login Container */
+.login-container {
+    filter:invert(100%);
+
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+.signup-container {
+    filter:invert(100%);
+
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Heading Styling */
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #f0a500;
+}
+h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #f0a500;
+}
+
+/* Form Elements */
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1em;
+    background: #eee;
+    color: #333;
+}
+
+form input::placeholder {
+    color: #aaa;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    color: #fff;
+    background: #f0a500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+
+form button:hover {
+    background: #ffc107;
+    transform: scale(1.05);
+}
+
+/* Signup Link */
+.signup-link {
+    color: #f0a500;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+.login-link {
+    color: #f0a500;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.signup-link:hover {
+    color: #ffc107;
+    text-decoration: underline;
+}
+.login-link:hover {
+    color: #ffc107;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    form input {
+        font-size: 0.9em;
+    }
+
+    form button {
+        font-size: 0.9em;
+    }
+}
